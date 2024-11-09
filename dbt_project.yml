@@ -1,0 +1,14 @@
+name: 'airbnb_project'
+version: '1.0'
+profile: 'airbnb_profile'
+
+model-paths: ['models']
+snapshot-paths: ['snapshots']
+
+models:
+  airbnb_project:
+    materialized: view
+    airbnb_silver:
+      materialized: table
+    airbnb_gold:
+      materialized: table
